@@ -1,0 +1,8 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/antonsavelev/Documents/Cprojects/MFTI/HomeWorks/dz_5/output/B_20'
+relocations:
+  - { offset: 0x19, size: 0x8, addend: 0x0, symName: _is_prime, symObjAddr: 0x0, symBinAddr: 0x100000568, symSize: 0x88 }
+  - { offset: 0x9A, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x88, symBinAddr: 0x1000005F0, symSize: 0x69 }
+  - { offset: 0xD7, size: 0x8, addend: 0x0, symName: _is_prime, symObjAddr: 0x0, symBinAddr: 0x100000568, symSize: 0x88 }
+...

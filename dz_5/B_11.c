@@ -18,19 +18,21 @@ int main(void) {
 		printf("%d\n", 0);
 	} else {
 
-	char *result = (char *)malloc(count+1);
-	if (!result) {
+		char *result = malloc(count+1);
+		
+		if (!result) {
 			perror("Ошибка malloc");
-	}
+		}
 
-	int pos = 0;
+		int pos = 0;
 
-	for (int i = 0; i < count; i++) {
-	
+		for (int i = 0; i < count; i++) {
 			pos += sprintf(result + pos, "%d", arr_num[i]);
+		}
+		result[++count] ='\0';
+		puts(result);
+		free(result);
 	}
-	result[++count] ='\0';
-	puts(result);
-}
+	
 	return 0;
 }
