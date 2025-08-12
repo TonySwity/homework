@@ -1,0 +1,8 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/antonsavelev/Documents/Cprojects/MFTI/HomeWorks/dz_6/output/c_14'
+relocations:
+  - { offset: 0x19, size: 0x8, addend: 0x0, symName: _try_even, symObjAddr: 0x0, symBinAddr: 0x100000568, symSize: 0x42 }
+  - { offset: 0x86, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x42, symBinAddr: 0x1000005AA, symSize: 0x9A }
+  - { offset: 0xCE, size: 0x8, addend: 0x0, symName: _try_even, symObjAddr: 0x0, symBinAddr: 0x100000568, symSize: 0x42 }
+...
