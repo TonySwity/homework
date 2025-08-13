@@ -5,7 +5,7 @@ typedef struct {
   int has_error;
 } BracketState;
 
-BracketState is_scrubs(char c, BracketState state) {
+BracketState is_bracket(char c, BracketState state) {
   if (c == '(') {
     state.open_count++;
   } else if (c == ')') {
@@ -23,7 +23,7 @@ int main(void) {
   BracketState state = {0, 0};
 
   while ((c = getchar()) != '.' && c != '\n') {
-    state = is_scrubs(c, state);
+    state = is_bracket(c, state);
   }
 
   printf("%s\n", (state.has_error || state.open_count != 0) ? "NO" : "YES");
