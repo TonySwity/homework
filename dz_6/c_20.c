@@ -26,6 +26,6 @@ int main(void) {
     state = is_bracket(c, state);
   }
 
-  printf("%s\n", (state.has_error || state.open_count != 0) ? "NO" : "YES");
+  printf("%s", (state.has_error || state.open_count != 0) ? "NO" : "YES");
   return 0;
 }
