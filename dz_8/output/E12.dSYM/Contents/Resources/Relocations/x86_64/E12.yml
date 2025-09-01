@@ -1,0 +1,9 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/antonsavelev/Documents/Cprojects/MFTI/HomeWorks/dz_8/output/E12'
+relocations:
+  - { offset: 0x19, size: 0x8, addend: 0x0, symName: _compare_digit, symObjAddr: 0x0, symBinAddr: 0x100000568, symSize: 0x2E }
+  - { offset: 0xAA, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x5C, symBinAddr: 0x1000005C4, symSize: 0x11A }
+  - { offset: 0x127, size: 0x8, addend: 0x0, symName: _compare_digit_rev, symObjAddr: 0x2E, symBinAddr: 0x100000596, symSize: 0x2E }
+  - { offset: 0x188, size: 0x8, addend: 0x0, symName: _compare_digit, symObjAddr: 0x0, symBinAddr: 0x100000568, symSize: 0x2E }
+...
