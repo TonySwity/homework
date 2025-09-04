@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void sort_array(int size, int a[]) {
+	int pos;
+	for(int i = 0; i < size; i++) {
+		pos = i;
+		for(int j = i+1; j < size; j++) {
+			if(*(a+j) < *(a+pos)) {
+				pos = j;
+			}
+		}
+		if(pos != i) {
+			int temp = *(a+i);
+			*(a+i) = *(a+pos);
+			*(a+pos) = temp;
+		}
+	}
+}
+
+int main(void) {
+    size_t count_num = 0, cap = 0;
+    int *a = NULL;
+    int temp_num;
+
+    while (scanf("%d", &temp_num) == 1) {
+        if (count_num == cap) {
+            size_t new_cap = cap ? cap * 2 : 8;
+            int *tmp = realloc(a, new_cap * sizeof *a);
+            if (!tmp) {
+                perror("realloc");
+                free(a);
+                return 1;
+            }
+            a = tmp;
+            cap = new_cap;
+        }
+        a[count_num++] = temp_num;
+    }
+
+    if (!feof(stdin)) {
+        fprintf(stderr, "Остановлено: встретился нечисловой токен.\n");
+    }
+
+	sort_array(count_num, a);
+
+    for (size_t i = 0; i < count_num; ++i) {
+		printf("%d%c", *(a+i), i + 1 < count_num ? ' ' : '\n');
+	}
+
+    free(a);
+    return 0;
+}

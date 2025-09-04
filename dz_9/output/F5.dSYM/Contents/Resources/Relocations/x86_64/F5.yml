@@ -1,0 +1,8 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/antonsavelev/Documents/Cprojects/MFTI/HomeWorks/dz_9/output/F5'
+relocations:
+  - { offset: 0x19, size: 0x8, addend: 0x0, symName: _find_max_array, symObjAddr: 0x0, symBinAddr: 0x100000568, symSize: 0x60 }
+  - { offset: 0x9E, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x60, symBinAddr: 0x1000005C8, symSize: 0x11D }
+  - { offset: 0x12F, size: 0x8, addend: 0x0, symName: _find_max_array, symObjAddr: 0x0, symBinAddr: 0x100000568, symSize: 0x60 }
+...
