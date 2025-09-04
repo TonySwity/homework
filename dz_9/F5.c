@@ -33,6 +33,6 @@ int main(void) {
     }
 
 	printf("%d", find_max_array(count_num, a));
-
+	free(a);
 	return 0;
 }
