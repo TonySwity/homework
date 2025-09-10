@@ -1,0 +1,8 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/antonsavelev/Documents/Cprojects/MFTI/HomeWorks/dz_9/output/F10'
+relocations:
+  - { offset: 0x19, size: 0x8, addend: 0x0, symName: _compression_char, symObjAddr: 0x0, symBinAddr: 0x100000568, symSize: 0x12B }
+  - { offset: 0xAF, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x12B, symBinAddr: 0x100000693, symSize: 0xDC }
+  - { offset: 0x137, size: 0x8, addend: 0x0, symName: _compression_char, symObjAddr: 0x0, symBinAddr: 0x100000568, symSize: 0x12B }
+...
