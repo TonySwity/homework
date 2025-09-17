@@ -18,7 +18,7 @@ static int compare_digit(const void *a, const void *b) {
  * Функция сравнения для сортировки по убыванию
  * @param a Указатель на первый элемент
  * @param b Указатель на второй элемент
- * @return Отрицательное значение если a < b, положительное если a > b, 0 если равны
+ * @return Отрицательное значение если a > b, положительное если a < b, 0 если равны
  */
 static int compare_digit_rev(const void *a, const void *b) {
     const int *num1 = (const int *)a;
@@ -36,6 +36,7 @@ int main(void) {
             return EXIT_FAILURE;
         }
     }
+
 
     qsort(arr, 5, sizeof(arr[0]), compare_digit);
 
