@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build active file (auto gcc/g++)",
+			"type": "shell",
+			"command": "/bin/bash",
+			"args": [
+				"-lc",
+				"f='${file}'; out='${fileDirname}/${fileBasenameNoExtension}'; case \"$f\" in *.c) /usr/local/bin/gcc -std=c17 -Wall -Wextra -g \"$f\" -o \"$out\" ;; *.cpp|*.cc|*.cxx|*.CPP|*.C) /usr/local/bin/g++ -std=c++20 -Wall -Wextra -g \"$f\" -o \"$out\" ;; *) echo \"Unsupported file extension: $f\"; exit 1 ;; esac"
+			],
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
